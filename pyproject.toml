@@ -13,11 +13,10 @@ packages = [
 python = '^3.8'
 jax = '^0.4.6'
 jaxlib = '^0.4.6'
-qax = '^0.2.0'
 
 [tool.poetry.dev-dependencies]
 pytest = '^7.3.1'
 
 [build-system]
-requires = ['poetry-core>=1.0.0']
+requires = ['poetry']
 build-backend = 'poetry.core.masonry.api'
