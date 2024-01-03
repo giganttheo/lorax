@@ -14,9 +14,9 @@ def lora(f):
 
 @dataclass
 class LoraWeight(qax.ImplicitArray):
-    w : qax.ArrayValue # M x N
-    a : qax.ArrayValue # k x N
-    b : qax.ArrayValue # M x k
+    w : qax.ArrayValue = None # M x N
+    a : qax.ArrayValue = None # k x N
+    b : qax.ArrayValue = None # M x k
 
     alpha : float = qax.aux_field(default=1.)
 
